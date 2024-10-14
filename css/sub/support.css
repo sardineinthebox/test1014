@@ -1,0 +1,320 @@
+@charset "utf-8";
+
+/********************* Product ***********************/
+/* 모바일 서브 섹션 타이틀*/
+#support {
+  padding: 90px 0;
+}
+#support .inner {
+  position: relative;
+}
+.section-tit {
+  text-align: center;
+}
+.section-tit h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 35px 0 20px 0;
+}
+.section-tit .sub-tab-btn {
+  border-bottom: 1px solid #555;
+}
+.section-tit .sub-tab-btn ul{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 30px 30px 30px;
+}
+.section-tit .sub-tab-btn li {
+  font-size: 14px;
+  font-weight: 200;
+  white-space: nowrap;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: font-weight 0.5s, opacity 0.5s;
+}
+.section-tit .sub-tab-btn li.active {
+  font-weight: 500;
+  opacity: 1;
+}
+
+/* A/S 접수하기 입력 양식 폼*/
+.sub-tab-content {
+  padding: 50px 0 100px;
+}
+.as-tab-container {
+  width: 100%;
+}
+.as-tab-container .as-tabs {
+  display: flex;
+}
+.as-tab-container .as-tabs li {
+  background:#9e9e9e;
+  border-radius: 20px 20px 0 0;
+	color: #fff;
+  width: calc(100% / 2);
+	padding: 10px 20px;
+	cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+}
+.as-tab-container .as-tabs li.current {
+  background: #c94d28;
+  font-weight: 600;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.current{
+	display: inherit;
+}
+#tab-1 {
+  text-align: center;
+  margin: 50px;
+}
+.form-wrap {
+  border: 1px solid #555;
+  padding: 10px;
+}
+
+.privacy .policy {
+  width: 100%;
+  border-bottom: 1px solid #555;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.privacy .policy p {
+  font-size: 14px;
+}
+.privacy .policy a {
+  width: 25%;
+  font-size: 12px;
+  display: inline-block;
+  background-color: #c94d28;
+  border-radius: 5px;
+  padding: 3px;
+  text-align: center;
+}
+.privacy .agree {
+  text-align: right;
+  padding: 15px;
+}
+.privacy .agree label {
+  font-size: 12px;
+}
+.privacy .agree input[type="checkbox"]{
+  display: none;
+}
+.privacy .agree input[type="checkbox"] + label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border:1px solid #707070;
+  vertical-align: middle;
+  position: relative;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.privacy .agree input[type="checkbox"]:checked + label::after {
+  content: "✔";
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%);
+}
+.order-box {
+  border: 1px solid #555;
+  padding:15px;
+  margin-bottom: 10px;
+}
+.order-container > div > div {
+  margin-bottom: 10px;
+}
+.order-txt1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.order-txt2 {
+  font-size: 14px;
+}
+.order-txt2 span {
+  color:#c94d28;
+}
+.input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.input-box > div {
+  margin-top: 10px;
+}
+.order-box input[type='text'] {
+  background: none;
+  border: 1px solid #555;
+  width: 90%;
+  height: 40px;
+  color: #fff;
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+}
+.tel input[type='text'] {
+  width: calc((90% - 10px)/3);
+}
+.tel .input-box span {
+  margin: 0 5px;
+}
+.tel .input-box > div {
+  width: 90%;
+}
+.address .postnum input[type='text'] {
+  width: 60%;
+}
+.address .postnum a {
+  font-size: 12px;
+  display: inline-block;
+  width: 30%;
+  height: 40px;
+  background-color: #555;
+  padding: 10px;
+  text-align: center;
+}
+.address .input-box div {
+  margin-bottom: 10px;
+}
+.address .add-box .add1 {
+  width: 90%;
+}
+.prd-info3 select {
+  width: 90%;
+  height: 30px;
+  cursor: pointer;
+}
+.prd-info4 textarea {
+  width: 90%;
+  height: 200px;
+}
+.prd-info5 .input-box div input[type="file"] {
+  width: 90%;
+  margin-bottom: 10px;
+  border: 1px solid #555;
+  padding: 10px;
+}
+.prd-info5 .input-box div input::file-selector-button {
+  background: #555;
+  cursor: pointer;
+  color: #fff;
+  border: 0;
+}
+.prd-info5 .input-box div span {
+  display: block;
+  font-size: 12px;
+  color: #ddd;
+}
+.as-submit {
+  margin: 30px auto;
+  position: relative;
+}
+.as-submit button{
+  border-radius: 50px;
+  background-color: #c94d28;
+  color: #fff;
+  font-family: "Pretendard", sans-serif;
+  font-size: 12px;
+  width: 100px;
+  padding: 10px;
+  border: 0;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.sub-tab-content .comingsoon {
+  text-align: center;
+  padding: 100px 0;
+  display: none;
+}
+.sub-tab-content .comingsoon .material-symbols-outlined {
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+/* 데스크탑 */
+@media screen and (min-width: 1200px){
+  #about .inner {
+    padding-bottom: 300px;
+  }
+
+  /* 데스크탑 서브 섹션 타이틀 공통*/
+  .section-tit {
+    text-align: left;
+    padding: 50px 0;
+  }
+  .section-tit .sub-tab-btn ul {
+    justify-content: flex-start;
+    padding: 0 0 30px 0;
+  }
+  .section-tit h2 {
+    font-size: 36px;
+    font-weight: 400;
+  }
+  .section-tit .sub-tab-btn li {
+    font-size: 48px;
+  }
+
+  .as-tab-container .as-tabs li {
+    font-size: 24px;
+  }
+  .privacy .policy p  {
+    font-size: 24px;
+  }
+  .privacy .policy a {
+    width: 10%;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  .privacy .agree label {
+    font-size: 16px;
+  }
+  .privacy .agree input[type="checkbox"] + label {
+    width: 20px;
+    height: 20px;
+  }
+  .privacy .agree input[type="checkbox"]:checked + label::after {
+    font-size: 20px;
+  }
+  .order-txt1 {
+    font-size: 36px;
+  }
+  .order-txt2 {
+    font-size: 16px;
+  }
+  .address .postnum input[type='text'] {
+    width:80%;
+  }
+  .address .postnum a {
+    width: 10%;
+  }
+  .prd-info5 .input-box div input[type="file"] {
+    font-size: 14px;
+  }
+  .as-submit button {
+    font-size: 20px;
+    width: 170px;
+  }
+}

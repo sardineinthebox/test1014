@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+
+/*********************About***********************/
+/* 모바일 서브 섹션 타이틀*/
+#about {
+  padding: 90px 0;
+}
+#about .inner {
+  position: relative;
+}
+.section-tit {
+  text-align: center;
+}
+.section-tit h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 35px 0 20px 0;
+}
+.section-tit .sub-tab-btn {
+  border-bottom: 1px solid #555;
+}
+.section-tit .sub-tab-btn ul{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 0 30px 30px 30px;
+}
+.section-tit .sub-tab-btn li {
+  font-size: 14px;
+  font-weight: 200;
+  white-space: nowrap;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: font-weight 0.5s, opacity 0.5s;
+}
+.section-tit .sub-tab-btn li.active {
+  font-weight: 500;
+  opacity: 1;
+}
+
+/* 모바일 서브 본문*/
+.sub-tab-content h3 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  margin: 50px 0 40px;
+}
+.sub-tab-content h3 span {
+  font-weight: 600;
+  color: #C94D28;
+}
+.sub-tab-content .b-visual {
+  width: 100%;
+}
+.sub-tab-content .b-speaker {
+  width: 40%;
+  position: absolute;
+  right: 20px;
+  top: 350px;
+}
+.sub-tab-content .b-txtbox1 {
+  width: 100%;
+  margin: 30px 0;
+}
+.sub-tab-content .b-txtbox1 h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.sub-tab-content p {
+  font-size: 12px;
+}
+.sub-tab-content .b-txtbox2 {
+  margin: 20px 0 30px;
+}
+.sub-tab-content .comingsoon {
+  text-align: center;
+  padding: 100px 0;
+  display: none;
+}
+.sub-tab-content .comingsoon .material-symbols-outlined {
+  font-size: 16px;
+}
+
+
+/* 데스크탑 */
+@media screen and (min-width: 1200px){
+  #about .inner {
+    padding-bottom: 300px;
+  }
+
+  /* 모바일 서브 섹션 타이틀 공통*/
+  .section-tit {
+    text-align: left;
+    padding: 100px 0;
+  }
+  .section-tit .sub-tab-btn ul {
+    justify-content: flex-start;
+    padding: 0 0 30px 0;
+  }
+  .section-tit h2 {
+    font-size: 36px;
+    font-weight: 400;
+  }
+  .section-tit .sub-tab-btn li {
+    font-size: 48px;
+  }
+
+  /* 모바일 서브 본문*/
+  .sub-tab-content h3 {
+    font-size: 40px;
+  }
+  .sub-tab-content .content-box {
+    position: relative;
+    padding: 100px 0;
+  }
+  .sub-tab-content .b-visual {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    align-items: center;
+  }
+  .sub-tab-content .b-visual {
+    width: 50%;
+  }
+  .sub-tab-content .b-visual img {
+    width: 30%
+  }
+  .sub-tab-content .b-speaker {
+    transform: scaleX(-1);
+    left: 50px;
+    top: 450px;
+    width: 30%;
+  }
+  .sub-tab-content p{
+    line-height: 1.8;
+    font-size: 18px;
+  }
+  .sub-tab-content .b-txtbox1 {
+    width: 50%;
+  }
+  .sub-tab-content .b-txtbox1 h4 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .sub-tab-content .b-txtbox2 {
+    width: 50%;
+    line-height: 1.8;
+    position: absolute;
+    right: 0;
+    bottom: -220px;
+  }
+}
+
+
+/*********************Product***********************/
